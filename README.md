@@ -6,4 +6,5 @@ Simple Deck Editor
 TODO:
 -Add functionality for doublefaced and split cards
 -Update styling
+-Some sort of data storage
 -???
