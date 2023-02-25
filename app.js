@@ -131,7 +131,7 @@ form.addEventListener('submit',  function(e){
     e.preventDefault();
     //add card
     addCard(deck_obj);
-    console.log(deck_obj);
+    //console.log(deck_obj);
 })
 
 const grid_view_button = document.querySelector("#gridview");
