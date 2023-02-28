@@ -136,7 +136,7 @@ button {
 @media(max-width: 550px) {
     .deck-gridview img {
         width: 30%;
-        height: 30%;
+        height: 25%;
     }
 
 }
