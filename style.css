@@ -44,6 +44,10 @@ body {
     
 }
 
+#searchform {
+    display: flex;
+}
+
 .add {
     display: flex;
     flex-direction: row;
@@ -53,9 +57,6 @@ body {
     grid-row: 2/3;
 }
 
-.add input {
-    padding: 15px 32px;
-}
 
 button {
     background-color: #4CAF50; /* Green */
@@ -132,11 +133,12 @@ button {
     padding: 10px 10px;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 550px) {
     .deck-gridview img {
         width: 30%;
         height: 30%;
     }
+
 }
 
 @media(max-width: 380px) {
@@ -144,4 +146,5 @@ button {
         width: 20%;
         height: 20%;
     }
+    
 }
