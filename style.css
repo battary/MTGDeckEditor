@@ -3,7 +3,13 @@
     padding: 0;
     }
 
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .app {
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows:  1fr 0.25fr 4fr;
@@ -53,14 +59,15 @@
 
 button {
     background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .deck-gridview {
@@ -72,9 +79,9 @@ button {
 .deck-textview {
     background-color: #344E41;
     grid-column: 3/13;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .deck-textview div h1{
@@ -123,4 +130,18 @@ button {
     list-style: none;
     font-size: 25px;
     padding: 10px 10px;
+}
+
+@media(max-width: 500px) {
+    .deck-gridview img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media(max-width: 380px) {
+    .deck-gridview img {
+        width: 20%;
+        height: 20%;
+    }
 }
